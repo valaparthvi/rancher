@@ -25,3 +25,7 @@ func CreateGKEHostedCluster(client *rancher.Client, displayName, cloudCredential
 	}
 	return clusterResp, err
 }
+
+func DeleteGKEHostCluster(client *rancher.Client, cluster *management.Cluster) error {
+	return client.Management.Cluster.Delete(cluster)
+}

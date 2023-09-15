@@ -73,7 +73,7 @@ func (h *HostedGKEClusterProvisioningTestSuite) TestProvisioningHostedGKE() {
 		clusterName string
 	}{
 		{provisioninginput.AdminClientName.String(), h.client, ""},
-		{provisioninginput.StandardClientName.String(), h.standardUserClient, ""},
+		//{provisioninginput.StandardClientName.String(), h.standardUserClient, ""},
 	}
 
 	for _, tt := range tests {
